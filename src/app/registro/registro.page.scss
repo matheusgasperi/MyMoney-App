@@ -1,0 +1,98 @@
+ion-content{
+  --ion-background-color: transparent;
+}
+
+.bg-color{
+  background: #f1f3f7;
+}
+
+ion-header{
+  position: absolute;
+}
+
+ion-toolbar{
+  --ion-backgrounf-color: transparent;
+  opacity: 0;
+}
+
+ion-card{
+  --ion-background-color:transparent;
+  box-shadow: none;
+}
+
+ion-card-title{
+  margin-top: 50px;
+  font-size: 25px;
+  color: #53565a;
+  font-weight: 600;
+  text-align: center;
+}
+
+ion-card-subtitle{
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #888c91;
+  font-weight: 400;
+  text-transform: none;
+  padding: 0 30px;
+}
+
+ion-card-content{
+  padding-top: 30px;
+}
+ion-item{
+  color: #74787e;
+  --border-color: #d4d7db;
+  --highlight-color-focused: #179757;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  font-size: 14px;
+  ion-input{
+    color: #74787e;
+    font-size: 14px;
+    ion-icon{
+      color: #257755;
+      padding-right: 6px;
+      font-size: 18px;
+    }
+  }
+
+  ion-input:hover{
+    color: #615f5f;
+  }
+
+
+}
+
+.sign-btnCaixa{
+  text-align: center;
+  padding-top: 20px;
+  .sign-btn{
+    --ion-primary-color: #4d9c7b;
+    --background: #4d9c7b;
+    --background-activated: #e1eaf9;
+    --background-focused: #f4f6fa;
+    --background-hover: #76dab3a6;
+
+  }
+}
+
+.text-tag{
+  margin-top: 40px;
+  text-align: center;
+  span{
+    font-size: 13px;
+    font-weight: normal;
+    color:#85888d;
+  }
+}
+
+.social-btns{
+  margin-top: 25px;
+  text-align: center;
+  ion-button{
+    width:40px;
+    padding-left: 5px ;
+  }
+}

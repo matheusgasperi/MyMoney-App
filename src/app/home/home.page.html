@@ -1,0 +1,38 @@
+
+<ion-content>
+  <div class="icone">
+    <ion-img src="assets/money.png"></ion-img>
+    <h1>My Money</h1>
+  </div>
+  <div class="main-div ion-padding">
+   <h1 class="ion-padding">Arraste para excluir ou editar</h1>
+   <div class="lista">
+     <ion-list>
+       <ion-item-sliding *ngFor="let trans of moneyTrans">
+         <ion-item>
+           <ion-label>
+            <p class="datinha">{{trans.data}}</p>
+
+             {{trans.titulo}}
+             <p [ngClass]="{gasto: trans.tipo === 'gasto', ganho: trans.tipo === 'ganho'}">{{trans.descricao}}</p>
+           </ion-label>
+           <p class="valor" [ngClass]="{gasto: trans.tipo === 'gasto', ganho: trans.tipo === 'ganho'}">R${{trans.valor}}</p>
+         </ion-item>
+         <ion-item-options side="end">
+           <ion-item-option color="danger">
+            <ion-icon name="trash-outline" (click)="delete_trans(trans.id)"></ion-icon>
+           </ion-item-option>
+           <ion-item-option color="dark">
+            <ion-icon name="create-outline" routerLink="/add-edit-data/{{trans.id}}"></ion-icon>
+           </ion-item-option>
+         </ion-item-options>
+       </ion-item-sliding>
+
+
+     </ion-list>
+   </div>
+   <ion-fab-button color="dark">
+     <ion-icon name="add-outline" routerLink="/add-edit-data/add"></ion-icon>
+   </ion-fab-button>
+  </div>
+</ion-content>

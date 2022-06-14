@@ -1,0 +1,102 @@
+ion-header{
+  position: absolute;
+}
+
+ion-toolbar{
+  --ion-background-color: transparent;
+  --opacity: 0;
+}
+
+ion-content{
+  --ion-background-color:#f1f3f7 !important;
+  --ion-item-background: transparent !important;
+}
+
+.caixaForm{
+  margin-top: 15px;
+}
+
+ion-item{
+
+  --highlight-color-focused:#257755;
+  --padding-start: 0;
+  --iner-padding-end: 0;
+    font-size: 14px;
+
+    ion-icon{
+      padding-right: 6px;
+      font-size: 18px;
+      color: #257755;
+    }
+
+  ion-input{
+    color: #615f5f;
+  }
+}
+
+.senhaE{
+  text-align: right;
+  ion-button{
+    font-size: 0.7rem;
+    color: #4d9c7b;
+  }
+}
+
+.sign-btnCaixa{
+  text-align: center;
+  padding-top: 20px;
+  .sign-btn{
+    --background: #4d9c7b;
+  }
+}
+
+.text-tag{
+  margin-top: 40px;
+  text-align: center;
+  span{
+    font-size: 13px;
+    font-weight: normal;
+    color:#85888d;
+  }
+}
+
+.social-btns{
+  margin-top: 25px;
+  text-align: center;
+  ion-button{
+    width:40px;
+    padding-left: 5px ;
+  }
+}
+
+ion-card{
+  --ion-background-color: transparent;
+  box-shadow: none ;
+}
+
+.ionRodape{
+   width: 100%;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+  span{
+    color: #85888d;
+    font-size: 14px;
+    font-weight: 200;
+
+  }
+
+  button{
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 3px;
+    color: 535558;
+  }
+
+  button:hover{
+    color: #969393
+  }
+}
